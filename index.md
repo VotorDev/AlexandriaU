@@ -1,27 +1,14 @@
 ---
 layout: default
-title: LightSpeed Contact
+title: Alexandria University - History Department
 ---
 
 ## About
-LightSpeed is a lightweight Jekyll theme designed to be privacy-friendly (~~no~~ _very little_ JavaScript), fast, and
-excellent at delivering content.
+This is the home page for the History Department at Alexandria University. We're proud to have some of the highest ranking courses in all the Cosmos. Here you will find information about the faculty and ongoing research  
 
-## About, Further
-This second section demonstrates spacing. CSS is kept to a minimum with minor styling
-for site colours and spacing. prism.js is used for code styling.    
-<br>
-Here's a new paragraph for you.  
-
-## Features
-- Pagination
-    - Posts
-    - Categories
-- Posts
-- RSS
-- Syntax highlighting
-- Basic Mobile Support
-- SEO Plugin
-
-## Contact
-Email me, [tom@tomjack.ca](mailto:tom@tomjack.ca).
+## Faculty Members
+- Akira Nakamura - Head of Department
+- Yui Tanaka
+- Takashi Yamamoto
+- Satoshi Suzuki
+- Ayumi Nakamura
