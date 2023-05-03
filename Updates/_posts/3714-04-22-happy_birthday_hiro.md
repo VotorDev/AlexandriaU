@@ -17,5 +17,3 @@ The Wad species, as many of you may know, are an incredibly intelligent and inqu
 Hiro's birthday is a cause for celebration, not only because it is an opportunity to show our appreciation for his contributions to our department, but also because it is a chance to reflect on the importance of embracing diversity and learning from those who come from different backgrounds and perspectives.
 
 As we gather to celebrate Hiro's birthday, let us take a moment to appreciate the incredible value that diversity brings to our department and to our understanding of history. Here's to many more years of learning and discovery with our beloved department pet, Hiro!
-
-- Akira Nakamura, Department Head -
