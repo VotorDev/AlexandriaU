@@ -8,6 +8,7 @@ title: Passwords in the 21st century
 
 ---
 
+# Passwords in the 21st century
 
 It is interesting to look back at the early 21st century and observe the way people used to create and use passwords. In those days, people often chose passwords based on familiar words or personal information, such as the names of loved ones, pets, or significant dates like birthdays. This practice was based on the assumption that these words and information were personal and memorable, making them easier to remember than a random string of characters.
 
