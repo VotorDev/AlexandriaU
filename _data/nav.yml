@@ -1,6 +1,4 @@
-- name: Posts
-  link: /posts
-- name: Categories
+- name: Department Updates
   link: /categories/
 - name: About & Contact
   link: /
