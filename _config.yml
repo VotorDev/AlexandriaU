@@ -22,10 +22,6 @@ sass:
   style: expanded # compact, expanded or compressed
 
 # Paginate
-paginate: 3
-
-paginate_path: posts/page:num/
-
 pagination:
   enabled: true
   # Value set low for demonstration purposes
@@ -37,7 +33,7 @@ pagination:
 autopages:
   enabled: true
   categories:
-    title: 'Posts in category :cat'
+    title: 'Posts in :cat'
     permalink: '/category/:cat'
     silent: false
 
