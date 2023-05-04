@@ -2,7 +2,7 @@
 
 layout: post
 
-author: Akira Nakamura
+author: Ayumi Nakamura
 
 title: Eureka!
 
@@ -10,7 +10,7 @@ title: Eureka!
 
 # Eureka!
 
-I'm quite excited about the recent trip from the Archaeology department. They have uncovered a trove of artifacts from a long-lost civilization, shedding new light on the history of this far-flung corner of the galaxy.
+Everyone in the department is quite excited about the recent trip of the Archaeology team. They have uncovered a trove of artifacts from a long-lost civilization, shedding new light on the history of this far-flung corner of the galaxy.
 
 While the team has yet to release detailed findings, their initial reports suggest that they have found evidence of a highly advanced society with sophisticated technologies and a rich cultural heritage. Among the artifacts discovered so far are intricate sculptures, ancient tools and weapons, and what appear to be fragments of a written language.
 
