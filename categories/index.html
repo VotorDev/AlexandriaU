@@ -6,7 +6,7 @@ title: LightSpeed Categories
 <h2>Categories</h2>
 {% for category in site.categories %}
     <h3 class="category-header"><b>{{category | first}}</b></h3>
-        {% for post in category[1] limit:3 %}
+        {% for post in category[1] limit:10 %}
         <span class="post-item">{{ post.date | date: '%Y-%m-%d' }} >> <a href="{{site.url}}{{ post.url }}">{{ post.title }}</a></span>
         {% endfor %}
 <div class="category-all-nav">
