@@ -8,7 +8,7 @@ This is the home page for the History Department at Alexandria University. We're
 
 ## Faculty Members
 ### Head of Department
-- Phd. Akira Nakamura
+- ![Akira Nakamura]({{site.url}}/assets/images/akira.jpg){:height="200vh"} Phd. Akira Nakamura
 
 ### Head of Research
 - Phd. Yui Tanaka
