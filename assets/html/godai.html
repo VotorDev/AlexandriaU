@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{site.url}}assets/styles.css">
+    <link rel="stylesheet" href="{{site.url}}assets/prism.css">
+    <script src="{{site.url}}assets/prism.js"></script>
+    <script src="/assets/aes.js"></script>
+    <script src="/assets/rsa.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var form = document.querySelector('form');
+        form.addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent the default form submission
+          var key = document.querySelector('input[name="key"]').value; // Get the key from the input field
+          var encryptedData = document.querySelector('textarea[name="encrypted-data"]').textContent; // Get the encrypted data from the paragraph element
+          var decryptedData = decryptAes(encryptedData, key); // Decrypt the data using the key
+          document.querySelector('textarea#decrypted-data').textContent = decryptedData; // Display the decrypted data on the page
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header class="site-header" role="banner">
+      <div class="wrapper">
+        <a href="/" class="site-title">{{ site.title | default: site.github.repository_name }}</a>
+        <nav class="site-nav">
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+          <ul>
+            <li class="page-about"><a href="/about/">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="wrapper" role="main">
+      <div class="content">
+        <h1 class="page-heading">Hello world</h1>
+        <textarea name="encrypted-data" rows="5">My encrypted data goes here</textarea>
+        <form>
+          <input type="text" name="key" placeholder="Enter your key">
+          <button type="submit">Decrypt</button>
+        </form>
+        <p>Decrypted data:</p>
+        <textarea id="decrypted-data" rows="5"></textarea>
+      </div>
+    </main>
+  </body>
+</html>
