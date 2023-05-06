@@ -20,7 +20,7 @@ function encryptAES(plaintext, key, iv) {
 
 function decryptAES(ciphertext, key, iv) {
 
-  const algorithm = { name: 'AES-GCM', iv };
+  const algorithm = { name: 'AES-CBC', iv };
 
   return window.crypto.subtle.decrypt(algorithm, key, ciphertext);
 
