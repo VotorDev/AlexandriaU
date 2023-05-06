@@ -10,7 +10,7 @@ function generateIV() {
 
 function encryptAES(plaintext, key, iv) {
 
-  const algorithm = { name: 'AES-GCM', iv };
+  const algorithm = { name: 'AES-CBC', iv };
 
   return window.crypto.subtle.encrypt(algorithm, key, plaintext);
 
