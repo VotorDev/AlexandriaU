@@ -1,60 +1,43 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8">
-    <title>My Blog</title>
+    <title>Alexandria University</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/AlexandriaU/assets/css/styles.css" />
-<link rel="stylesheet" type="text/css" href="/AlexandriaU/assets/css/prism.css" />
-<script src="/AlexandriaU/assets/js/prism.js"></script>
-    <script src="/AlexandriaU/assets/aes.js"></script>
-    <script src="/AlexandriaU/assets/rsa.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        var form = document.querySelector('form');
-        form.addEventListener('submit', function(event) {
-          event.preventDefault(); // Prevent the default form submission
-          var key = document.querySelector('input[name="key"]').value; // Get the key from the input field
-          var encryptedData = document.querySelector('textarea[name="encrypted-data"]').textContent; // Get the encrypted data from the paragraph element
-          var decryptedData = decryptAes(encryptedData, key); // Decrypt the data using the key
-          document.querySelector('textarea#decrypted-data').textContent = decryptedData; // Display the decrypted data on the page
-        });
-      });
-    </script>
+    <link rel="stylesheet" type="text/css" href="/AlexandriaU/assets/css/prism.css" />
+    <script src="/AlexandriaU/assets/js/prism.js"></script>
+    <script src="/AlexandriaU/assets/godai.js"></script>
   </head>
+
   <body>
     <header class="wrapper-header">
-            <div class="header">
-    <img src="https://votordev.github.io/AlexandriaU//assets/images/logo.png" height="100vh" style="vertical-align:middle; margin: 10px" />
-    <div style="display:inline-block; vertical-align:middle; margin-left: 10px">
-        <h1>Alexandria University</h1>
-        <br>
-        <h5><i>History Department</i></h5>
-        <br>
-        <nav>
-    
-    <a href="https://votordev.github.io/AlexandriaU//categories/">Department Updates</a>
-    
-    <a href="https://votordev.github.io/AlexandriaU//">About & Contact</a>
-    
-</nav>
-
-    </div>
-    <hr>
-</div>
- 
+      <div class="header">
+        <img src="https://votordev.github.io/AlexandriaU//assets/images/logo.png" height="100vh" style="vertical-align:middle; margin: 10px" />
+        <div style="display:inline-block; vertical-align:middle; margin-left: 10px">
+          <h1>Alexandria University</h1>
+          <br>
+          <h5><i>History Department</i></h5>
+          <br>
+          <nav>
+            <a href="https://votordev.github.io/AlexandriaU//categories/">Department Updates</a>
+            <a href="https://votordev.github.io/AlexandriaU//">About & Contact</a>
+          </nav>
+        </div>
+        <hr>
+      </div>
     </header>
     <main class="wrapper-main" role="main">
       <div class="content">
-        <h1 class="page-heading">Hello world</h1>
-        <textarea name="encrypted-data" rows="5">My encrypted data goes here</textarea>
+        <h1 class="page-heading">Order of Godai</h1>
         <form>
           <input type="text" name="key" placeholder="Enter your key">
-          <button type="submit">Decrypt</button>
+          <button type="submit" id="decrypt-button">Decrypt</button>
         </form>
-        <p>Decrypted data:</p>
-        <textarea id="decrypted-data" rows="5"></textarea>
+        <p id="decrypted-data"></p>
       </div>
     </main>
   </body>
+
 </html>
