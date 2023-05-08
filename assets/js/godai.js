@@ -40,7 +40,6 @@
   function decryptMessage() {
     let buffer = base64ToArrayBuffer(ciphertext);
     getKey().then((key) => {
-      console.log("1",key);
       window.crypto.subtle.decrypt({
           name: "AES-CBC",
           iv,
@@ -52,10 +51,9 @@
         console.log("2", decrypted);
         let dec = new TextDecoder();
         const decryptedValue = document.querySelector("#decrypted-data");
-        console.log("3",decryptedValue);
         clear_text = dec.decode(decrypted);
         decryptedValue.innerHTML = clear_text;
-        console.log("4", clear_text);
+        console.log("3", clear_text);
       });
     });
   }
@@ -67,7 +65,7 @@
   window.addEventListener('DOMContentLoaded', (event) => {
     const decryptButton = document.querySelector("#decrypt-button");
     decryptButton.addEventListener("click", () => {
-        console.log("0","decrypt");
+        console.log("1","decrypt");
         decryptMessage();
     });
   });
