@@ -64,11 +64,11 @@
   Generate an encryption key, then set up event listeners
   on the "Encrypt" and "Decrypt" buttons.
   */
-
+  window.addEventListener('DOMContentLoaded', function() {
     const decryptButton = document.querySelector("#decrypt-button");
     decryptButton.addEventListener("click", () => {
         console.log("0","decrypt");
         decryptMessage();
     });
-
+  });
 })();
